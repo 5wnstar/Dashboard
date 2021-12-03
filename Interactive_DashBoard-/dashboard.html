@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dashboard</title>
+
+		<!-- Tailwindcss JIT -->
+		<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+		   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="assets/css/dashboard.css">
+	</head>
+	<body>
+		<aside class="w-[20%] h-[100%] shadow-lg left-0 fixed">
+			<header class="p-[1em] py-[1.5em]">
+				<img src="assets/img/Instincthub logo.png" alt="Instincthub Logo">
+			</header>
+
+			<div class="my-1">
+				<a href="#">
+					<button class="w-full h-full px-[1.8em] py-[1em] text-left text-white bg-black hover:bg-gray-800 transition duration-200">
+						<img src="assets/img/bx_bxs-dashboard.png" alt="">
+						 Overview
+					</button>
+				</a>
+			</div>
+
+			<div class="my-1">
+				<a href="#">
+					<button class="w-full h-full px-[1.8em] py-[1em] text-left text-white bg-black hover:bg-gray-800 transition duration-200">
+						<img src="assets/img/akar-icons_file.png" alt="Classes">
+						Classes
+					</button>
+				</a>
+			</div>
+
+			<div class="my-1">
+				<a href="#">
+					<button class="w-full h-full px-[1.8em] py-[1em] text-left text-white bg-black hover:bg-gray-800 transition duration-200">
+						<img src="assets/img/codicon_graph.png" alt="Analytics">
+						Analytics
+					</button>
+				</a>
+			</div>
+
+			<div class="my-1">
+				<a href="#">
+					<button class="w-full h-full px-[1.8em] py-[1em] text-left text-white bg-black hover:bg-gray-800 transition duration-200">
+						<img src="assets/img/ic_baseline-group.png" alt="Community">
+						Community
+					</button>
+				</a>
+			</div>
+
+			<div class="my-1">
+				<a href="#">
+					<button class="w-full h-full px-[1.8em] py-[1em] text-left text-white bg-black hover:bg-gray-800 transition duration-200">
+						<img src="assets/img/fe_logout.png" alt="Logout">
+						Logout
+					</button>
+				</a>
+			</div>
+		</aside>
+
+
+		<main class="w-[80%] absolute right-0">
+			<nav class="w-[100%] shadow-lg w-full px-[2em] py-[1em]">
+				<div class="flex flex-row items-center justify-between">
+					<h1>My Course dashbaord</h1>
+	
+					<div class="flex flex-row items-center justify-center">
+						<div class="px-2">
+							<input
+								placeholder="You are looking for ..."
+								type="text"
+								class="px-6 border-[1px] border-gray-200 rounded-l-full rounded-r-full transition duration-200 focus:ring focus:bg-gray-100"
+							/>
+							
+						</div>
+	
+						<div class="px-2">
+							<img src="assets/img/codicon_bell-dot.png" alt="Notifications">
+						</div>
+	
+						<div class="px-2">
+							<img src="assets/img/User profile.png" alt="user image" class="rounded-full w-[30px] h-auto border-[1px] border-gray-900 border-solid">
+						</div>
+					</div>
+				</div>
+			</nav>
+	
+			<div class="container mx-auto p-[2em]">
+				<!-- charts -->
+	
+				<section class="grid grid-cols-3 gap-4">
+					<div class="shadow-lg rounded-md grid grid-cols-2 gap-6 p-4 bg-gray-100">
+						<div class="donut">
+							<p class="w-full my-[33%] text-center text-3xl font-bold">71 %</p>
+						</div>
+						<div class="w-full h-full px-4 py-[40%] text-center">
+							<h4 class="w-full text-left font-bold">Daily</h4>
+							<p class="w-full text-left">Activities</p>
+						</div>
+					</div>
+
+					<div class="shadow-lg rounded-md grid grid-cols-2 gap-6 p-4">
+						<div class="donut">
+							<p class="w-full my-[33%] text-center text-3xl font-bold">20 %</p>
+						</div>
+						<div class="w-full h-full px-4 py-[40%] text-center">
+							<h4 class="w-full text-left font-bold">Monthly</h4>
+							<p class="w-full text-left">Activities</p>
+						</div>
+					</div>
+
+					<div class="shadow-lg rounded-md grid grid-cols-2 gap-6 p-4">
+						<div class="donut">
+							<p class="w-full my-[33%] text-center text-3xl font-bold">12 %</p>
+						</div>
+						<div class="w-full h-full px-4 py-[40%] text-center">
+							<h4 class="w-full text-left font-bold">Yearly</h4>
+							<p class="w-full text-left">Activities</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- table -->
+				<section class="py-4">
+					<table class="w-full shadow-lg">
+						<thead class="rounded-t-md bg-black text-white text-left">
+							<tr>
+								<th class="w-10">No</th>
+								<th>Course name</th>
+								<th>Department</th>
+								<th>Units</th>
+								<th>GPA</th>
+							</tr>
+						</thead>
+
+						<tbody class="bg-white">
+							<tr>
+								<td>0</td>
+								<td>Tax Academy Intro</td>
+								<td>Finances </td>
+								<td>3</td>
+								<td>4.3/5</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Transfer pricing</td>
+								<td>Customer Service</td>
+								<td>3</td>
+								<td>4.3/5</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Tax Academy for Beginner</td>
+								<td>Purchasing</td>
+								<td>3</td>
+								<td>4.3</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>New Business</td>
+								<td>Finances</td>
+								<td>3</td>
+								<td>3.0/5</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Tax Accounting</td>
+								<td>Adminstrator</td>
+								<td>8</td>
+								<td>4.7/5</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Motion Design</td>
+								<td>I.T Department</td>
+								<td>6</td>
+								<td>4.4/5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>3D Modeling</td>
+								<td>I.T Department</td>
+								<td>3</td>
+								<td>3.0/5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>Brand Stragedy on Instagram</td>
+								<td>Marketing</td>
+								<td>3</td>
+								<td>4.7/5</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</section>
+				<section>
+					<div class="container rounded-t-md mx-auto px-20 bg-black">
+						<h1 class="text-center font-bold text-white justify-between"> When nothing goes right, go left</h1>
+						<p class="w-full text-left text-white">Build Your Skills with courses and degree online from </br> anywhere with professional instructors </p>
+						<div class="container rounded-md mx-auto px-5 bg-white text-red">
+							<P class="w-full text-left"> Learn more </P>
+						</div>
+						<img src="assets/img/female image.png" alt="female image" class="object-right-top" title="object-right-top">
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
