@@ -1,1 +1,1 @@
-# Interactive Dasboard Using HTML and the CSS using Tailwing Framework 
+# Interactive Dasboard Using HTML and the CSS using Tailwind Framework 
